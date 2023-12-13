@@ -1,0 +1,80 @@
+
+        <form [formGroup]="editForm" (ngSubmit)="editUser()">
+            <mat-card>
+                <mat-card-header>
+                    <h1>Edit User</h1>
+                </mat-card-header>
+                <mat-card-content>
+                    <mat-form-field>
+                        <mat-label>FirstName</mat-label>
+                        <input matInput formControlName="firstName">
+                    </mat-form-field>
+        
+                    <mat-form-field>
+                        <mat-label>LastName</mat-label>
+                            <textarea matInput formControlName="lastName"></textarea>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label>Email</mat-label>
+                            <textarea matInput formControlName="email"></textarea>
+                    </mat-form-field>
+                   
+                </mat-card-content>
+                <mat-card-actions>
+                    <button type="submit" mat-raised-button color="accent">Save</button>
+                    <a (click)="ClosePopup()" mat-raised-button color="primary">Close</a>
+                </mat-card-actions>
+            </mat-card>
+        </form>
+  
+
+<!-- <div class="row">
+    <div class="col-md-12">
+        <h3>Update User</h3>
+        <hr />
+
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label>Firstname</label>
+                <input type="text" class="form-control" formControlName="firstName" /> -->
+                <!-- <div *ngIf="registerForm.get('firstName')?.touched && !registerForm.get('firstName')?.valid">
+                    <div *ngIf="registerForm.get('lastName')?.errors">
+                        Firstname is required
+                    </div>
+                    
+                    
+                </div> -->
+            <!-- </div>
+            <div class="mb-3">
+                <label>LastName</label>
+                <textarea class="form-control" formControlName="lastName"></textarea> -->
+                <!-- <div *ngIf="
+              registerForm.get('lastName')?.touched &&
+              !registerForm.get('lastName')?.valid
+             ">
+                    <div *ngIf="registerForm.get('lastName')?.errors">
+                        LastName is required
+                    </div>
+                    
+                </div> -->
+            <!-- </div>
+            <div class="mb-3">
+                <label>Email</label>
+                <textarea class="form-control" formControlName="email"></textarea>
+                <div *ngIf="
+              registerForm.get('email')?.touched &&
+              !registerForm.get('email')?.valid
+             ">
+                    <div *ngIf="registerForm.get('email')?.errors">
+                        Email is required
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="my-3">
+                <button type="submit" class="btn btn-primary">Update User</button>
+            </div>
+        </form>
+    </div>
+</div> -->

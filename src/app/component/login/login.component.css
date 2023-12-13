@@ -1,0 +1,14 @@
+.mdc-button{
+    margin: 2px;
+}
+.mat-mdc-form-field{
+    width: 100%;
+}
+a {
+   
+    margin-left: 17rem;
+  }
+  
+  a:hover {
+    color: #023974; 
+  }
